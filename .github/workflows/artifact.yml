@@ -22,11 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-     -name: downloud arti
-      uses: actions/download-artifact@v2
-        with:
+     - name: downloud arti
+       uses: actions/download-artifact@v2
+       with:
           name: hello-artifact
           path: ./artifacts
      - name: Display content of the text file
-         run: cat ./artifacts/hello.txt
+       run: cat ./artifacts/hello.txt
   
